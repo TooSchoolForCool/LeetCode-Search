@@ -45,8 +45,7 @@ def parse_args(argv):
     for arg in query_args:
         if arg and arg[0] != '-':
             query_content += arg + " "
-    query_content = query_content[:-1]
 
-    args["query"] = query_content
+    args["query"] = query_content[:-1]
 
     return args
