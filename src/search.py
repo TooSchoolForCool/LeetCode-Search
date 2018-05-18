@@ -10,7 +10,7 @@ import settings
 
 
 def main(wf):
-    args = wf.args
+    args = utils.parse_args(wf.args)
     wf.logger.debug(args)
 
     url = "https://leetcode.com/problemset/all/"
