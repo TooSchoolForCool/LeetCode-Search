@@ -21,7 +21,7 @@ def parse_args(argv):
     args = {}
 
     # determine search mode
-    if(argv[0] == "--topic"):
+    if(argv[0].lower() == "--topic"):
         args["mode"] = "topic"
     else:
         args["mode"] = "problem"
@@ -34,11 +34,11 @@ def parse_args(argv):
     args["difficulty"] = None
 
     if ("-e" in query_args) or ("--easy" in query_args):
-        args["difficulty"] = "easy"
+        args["difficulty"] = "Easy"
     if ("-m" in query_args) or ("--medium" in query_args):
-        args["difficulty"] = "medium"
+        args["difficulty"] = "Medium"
     if ("-h" in query_args) or ("--hard" in query_args):
-        args["difficulty"] = "hard"
+        args["difficulty"] = "Hard"
 
     # get query content, any word start with '-' will be ignored
     query_content = ""
