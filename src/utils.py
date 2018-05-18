@@ -49,3 +49,10 @@ def parse_args(argv):
     args["query"] = query_content[:-1]
 
     return args
+
+
+def is_match(dst, src):
+    if dst in src:
+        return True
+    else:
+        return False

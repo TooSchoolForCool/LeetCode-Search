@@ -21,7 +21,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DD4D5057-65D3-4A75-9E52-85B729F73296</key>
+		<key>AB3D02A9-D91A-4AFC-8D89-981AD46DDCC9</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -79,7 +79,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search LeetCode</string>
+				<string>Search LeetCode Topic '...'</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -145,7 +145,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search LeetCode</string>
+				<string>Search LeetCode Problem '...'</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -154,7 +154,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>DD4D5057-65D3-4A75-9E52-85B729F73296</string>
+			<string>AB3D02A9-D91A-4AFC-8D89-981AD46DDCC9</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -185,12 +185,12 @@ Cheers~</string>
 			<key>ypos</key>
 			<integer>100</integer>
 		</dict>
-		<key>DD4D5057-65D3-4A75-9E52-85B729F73296</key>
+		<key>AB3D02A9-D91A-4AFC-8D89-981AD46DDCC9</key>
 		<dict>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>270</integer>
 		</dict>
 	</dict>
 	<key>version</key>

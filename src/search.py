@@ -4,33 +4,52 @@ import sys
 
 from workflow import Workflow, web, ICON_ERROR, ICON_SETTINGS
 
-from utils import parse_args
-
-# Define Global Variables
-UPDATE_SETTINGS = {'github_slug': 'TooSchoolForCool/LeetCode-Search'}
-HELP_URL = 'https://github.com/TooSchoolForCool/LeetCode-Search/issues'
-
-# LeetCode Algorithm Problem URL
-LEETCODE_URL = "https://leetcode.com/problemset/algorithms/"
+from utils import parse_args, is_match
+from settings import UPDATE_SETTINGS, HELP_URL, LEETCODE_URL, LC_TOPICS
 
 
 class SearchResult(object):
-    def __init__(self, content, url):
-        self.content_ = content
+    def __init__(self, title, subtitle, url):
+        self.title_ = title
+        self.subtitle_ = subtitle
         self.url_ = url
 
 
 def search_topic(args):
     results = []
 
+    query = args["query"]
+    difficulty_api = "difficulty=" + args["difficulty"] if args["difficulty"] else ""
+    difficulty = "[%s]" % args["difficulty"] if args["difficulty"] else ""
+
+    for k, v in LC_TOPICS.items():
+        if is_match(query, k):
+            title = "%s %s" % (v[0], difficulty)
+            subtitle = "Search LeetCode Topic '%s' %s" % (v[0], difficulty)
+            url = "{0}?topicSlugs={1}&{2}".format(LEETCODE_URL, v[1], difficulty_api)
+
+            results.append( SearchResult(title, subtitle, url) )
+
+    if not results:
+        title = query
+        subtitle = "Search LeetCode for '%s'" % query
+        url = "{0}?search={1}".format(LEETCODE_URL, query)
+
+        results.append( SearchResult(title, subtitle, url) )
+
     return results
 
 
 def search_prob(args):
-    content = args["query"]
-    url = "{0}?search={1}".format(LEETCODE_URL, content)
+    query = args["query"] if args["query"] else "..."
+    difficulty_api = "difficulty=" + args["difficulty"] if args["difficulty"] else ""
+    difficulty = "[%s]" % args["difficulty"] if args["difficulty"] else ""
 
-    result = SearchResult(content, url)
+    title = title = "%s %s" % (query, difficulty)
+    subtitle = "Search LeetCode for '%s' %s" % (query, difficulty)
+    url = "{0}?search={1}&{2}".format(LEETCODE_URL, query, difficulty_api)
+
+    result = SearchResult(title, subtitle, url)
     
     return [result] 
 
@@ -45,9 +64,8 @@ def main(wf):
 
     for res in results:
         wf.add_item(
-            title=res.content_,
-            subtitle="Search LeetCode for {0}".format(res.content_),
-            autocomplete=res.content_ + " ",
+            title=res.title_,
+            subtitle=res.subtitle_,
             valid=True,
             uid=res.url_,
             arg=res.url_
