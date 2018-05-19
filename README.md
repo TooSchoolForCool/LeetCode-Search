@@ -26,15 +26,19 @@ lc knapsack -h
 
 ### 1.2 Serach Topic
 
-Try keyword `lct` for searching a specific Topic in LeetCode. Just type in some keywords and **LeetCode Search** will automatically suggests you some related topics. Note: These topics are pre-defined by LeetCode, if no related topic is matched, then a general search will be performed.
+Try keyword `lct` for searching a specific Topic in LeetCode. Just type in some keywords and **LeetCode Search** will automatically suggests you some related topics. 
+
+*Note: These topics are pre-defined by LeetCode, if no related topic is matched, then a general search will be performed.*
 
 
 
 Here is a simple example to search Medium problem in `tree` related topics.
 
-```
-lct tree -m
-```
+![image-20180518213429177](docs/lct-tree-example.png)
+
+
+
+You can also try some other keyword, like `search`, `string`, `dp`, or you can just enter the topic listed on the LeetCode, it works as well.
 
 
 
