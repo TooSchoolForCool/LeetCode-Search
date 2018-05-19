@@ -12,7 +12,7 @@
 
 Version: 1.0.0
 
-You can download it [HERE](./release/LeetCode Search.alfredworkflow)
+You can download it [HERE](release/LeetCode Search.alfredworkflow)
 
 
 
