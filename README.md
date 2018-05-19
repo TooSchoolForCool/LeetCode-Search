@@ -1,14 +1,46 @@
 # LeetCode Search for Alfred Workflow
 
-**LeetCode Search** is an [Alfred](https://www.alfredapp.com) Workflow plugin for searching algorithm problems in LeetCode with custom options.
+**LeetCode Search** is an [Alfred](https://www.alfredapp.com) Workflow plugin for searching algorithm problems in [LeetCode](https://leetcode.com) with custom options.
 
 
 
-## Usage
+![demo](docs/demo.gif)
 
 
 
+## 1. Usage
 
+### 1.1 General Search
+
+Try keyword `lc` for general search in LeetCode. Just simply enter your query. You can also enter `-e`, `-m` and `-h` to specify Easy, Medium and Hard problem. 
+
+
+
+Here is a simple example to search Hard problem with keyword *knapsack*
+
+```
+lc knapsack -h
+```
+
+
+
+### 1.2 Serach Topic
+
+Try keyword `lct` for searching a specific Topic in LeetCode. Just type in some keywords and **LeetCode Search** will automatically suggests you some related topics. Note: These topics are pre-defined by LeetCode, if no related topic is matched, then a general search will be performed.
+
+
+
+Here is a simple example to search Medium problem in `tree` related topics.
+
+```
+lct tree -m
+```
+
+
+
+## Acknowledgement
+
+This Alfred Workflow plugin is developed based on [deanishe/alfred-workflow](https://github.com/deanishe/alfred-workflow). Thanks for this great helper library.
 
 
 
