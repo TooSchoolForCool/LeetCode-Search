@@ -1,8 +1,8 @@
 # LeetCode Search for Alfred Workflow
 
+![passing](https://img.shields.io/badge/build-passing-brightgreen.svg) ![version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg) ![python](https://img.shields.io/badge/python-2.6%2C%202.7-blue.svg)  
+
 **LeetCode Search** is an [Alfred](https://www.alfredapp.com) Workflow plugin for searching algorithm problems in [LeetCode](https://leetcode.com) with custom options.
-
-
 
 ![demo](docs/demo.gif)
 
