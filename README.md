@@ -8,9 +8,17 @@
 
 
 
-## 1. Usage
+## 1. Download
 
-### 1.1 General Search
+Version: 1.0.0
+
+You can download it [HERE](./release/LeetCode Search.alfredworkflow)
+
+
+
+## 2. Usage
+
+### 2.1 General Search
 
 Try keyword `lc` for general search in LeetCode. Just simply enter your query. You can also enter `-e`, `-m` and `-h` to specify Easy, Medium and Hard problem. 
 
@@ -24,7 +32,7 @@ lc knapsack -h
 
 
 
-### 1.2 Serach Topic
+### 2.2 Serach Topic
 
 Try keyword `lct` for searching a specific Topic in LeetCode. Just type in some keywords and **LeetCode Search** will automatically suggests you some related topics. 
 
