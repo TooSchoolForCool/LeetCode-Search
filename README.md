@@ -12,7 +12,7 @@
 
 Version: 1.0.0
 
-You can download it [HERE](release/LeetCode Search.alfredworkflow)
+You can download the latest version in [Github releases page](https://github.com/TooSchoolForCool/LeetCode-Search/releases/tag/1.0.0).
 
 
 
