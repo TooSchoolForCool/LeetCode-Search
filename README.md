@@ -1,6 +1,6 @@
 # LeetCode Search for Alfred Workflow
 
-![passing](https://img.shields.io/badge/build-passing-brightgreen.svg) ![version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg) ![python](https://img.shields.io/badge/python-2.6%2C%202.7-blue.svg)  
+![passing](https://img.shields.io/badge/build-passing-brightgreen.svg) ![version](https://img.shields.io/badge/version-1.0.1-brightgreen.svg) ![python](https://img.shields.io/badge/python-2.6%2C%202.7-blue.svg)  
 
 **LeetCode Search** is an [Alfred](https://www.alfredapp.com) Workflow plugin for searching algorithm problems in [LeetCode](https://leetcode.com) with custom options.
 
@@ -9,8 +9,6 @@
 
 
 ## 1. Download
-
-Version: 1.0.0
 
 You can download the latest version in [Github releases page](https://github.com/TooSchoolForCool/LeetCode-Search/releases/tag/1.0.0).
 

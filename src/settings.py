@@ -33,5 +33,6 @@ LC_TOPICS = {
     "bst binary search tree" : ("Binary Search Tree", "binary-search-tree"),
     "recursion" : ("Recursion", "recursion"),
     "queue" : ("Queue", "queue"),
-    "design" : ("Design", "design")
+    "design" : ("Design", "design"),
+    "topological sort" : ("Topological Sort", "topological-sort")
 }
