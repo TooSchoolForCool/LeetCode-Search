@@ -30,7 +30,7 @@ lc knapsack -h
 
 
 
-### 2.2 Serach Topic
+### 2.2 Search Topic
 
 Try keyword `lct` for searching a specific Topic in LeetCode. Just type in some keywords and **LeetCode Search** will automatically suggests you some related topics. 
 
